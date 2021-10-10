@@ -80,16 +80,6 @@ html, body {
 	top: 63px;
 	left: 1176px;
 }
-.basket {
-	display: block;
-	width: 23px;
-	height: 23px;	
-	background-image: url(img/basket.png);
-	position: absolute;
-	top: 63px;
-	left: 1210px;
-}
-
 .clearfix:after {
 	content: "";
 	display: block;
@@ -99,7 +89,6 @@ html, body {
 	margin-top: 288px;
 	position: absolute;
 }
-
 .text-slider p {
 	color:  #6c6c6c;
 	font-size: 14px;
@@ -107,7 +96,6 @@ html, body {
 	width: 458px;
 	line-height: 24px;
 }
-
 .button-order {
 	background-color:  #ffffff;
 	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
@@ -135,7 +123,6 @@ html, body {
 .button-order img{
 	padding-left: 22px;
 }
-
 .green {
 	text-transform: uppercase;
 	color:  #43a047;
@@ -146,7 +133,6 @@ html, body {
 	line-height: 13px;
 	letter-spacing: 1px;
 }
-
 .big {
 	color:  #212121;
 	font-size: 59px;
@@ -190,7 +176,6 @@ html, body {
 	background-color: #212121;
 	margin: 0px;
 }
-
 .featured {
 	padding-left: 98px;
 	padding-right: 98px;
@@ -421,17 +406,6 @@ html, body {
 	width: 460px;
 	margin-top: 287px;
 	position: absolute;
-}
-
-.red {
-	text-transform: uppercase;
-	color: #e53935;
-	font-size: 18px;
-	font-weight: 700;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 17px;
-	margin-bottom: 22px;
 }
 
 .exclusive {
@@ -787,59 +761,6 @@ td:first-child {
 	border-bottom: 3px solid #212121;
 }
 
-/*
-.products-box {
-	padding: 0px 83px;
-}
-.products {
-	margin-top: 50px;
-	margin-bottom: 56px;
-}
-.products .block a img {
-	float: left;
-}
-.products .block {
-	float: left;
-	margin: 15px;
-	display: block;
-	height: 370px;
-	width: 370px;
-	position: relative;
-}
-.products a .text {
-	display: none;
-	height: 368px;
-	width: 368px;
-	background-color: #ffffff;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    border: 1px solid #9c9c9c;
-}
-.products a .text h4 {
-	color:  #212121;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.products a .text p {
-	color:  #6c6c6c;
-	font-size: 20px;
-	font-weight: 300;
-	text-align: center;
-	margin: 15px 15px;
-}
-.products a .text img {
-	float: none;
-	margin-top: 80px;
-}
-.products a:hover .text{
-	display: block;
-}
-*/
-
 .loading {
 	text-align: center;
 	margin-bottom: 140px;
@@ -972,103 +893,6 @@ td:first-child {
 	text-align: center;
 }
 
-.red-button {
-	display: block;
-	height: 71px;
-	width: 510px;
-	border-radius: 35px;
-	background-color: #f44336;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color:  #ffffff;
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 24px;
-	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
-	line-height: 70px;
-	letter-spacing: 6px;
-	margin-top: 31px;
-}
-.red-button:hover {
-	box-shadow: none;
-}
-.red-button:active {
-	box-shadow: none;
-	background-color: #d41306;
-}
 
-.description-text {
-	margin-top: 50px;
-	color:  #212121;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
-	text-align: left;
-}
-.description-text p {
-	margin-bottom: 0.5em;
-}
 
-.related {
-	padding: 0px 98px;
-}
-.related .title {
-	height: 343px;
-	margin-right: 0;
-}
-.related .title h2 {
-	margin-top: 245px;
-}
-.related .title .explore {
-	margin-top: 262px;
-}
-.related-products {
-	margin-bottom: 120px;
-}
-.related-products .block a img {
-	float: left;
-}
-.related-products .block {
-	float: left;
-	margin-right: 30px;
-	display: block;
-	height: 370px;
-	width: 370px;
-	position: relative;
-}
-.related-products .block:nth-child(3n) {
-	margin-right: 0px;
-}
-.related-products a .text {
-	display: none;
-	height: 368px;
-	width: 368px;
-	background-color: #ffffff;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    border: 1px solid #9c9c9c;
-}
-.related-products a .text h4 {
-	color:  #212121;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.related-products a .text p {
-	color:  #6c6c6c;
-	font-size: 20px;
-	font-weight: 300;
-	text-align: center;
-	margin: 15px 15px;
-}
-.related-products a .text img {
-	float: none;
-	margin-top: 80px;
-}
-.related-products a:hover .text{
-	display: block;
-}
+
