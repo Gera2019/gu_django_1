@@ -1,0 +1,38 @@
+{% extends 'geekshop/base.html' %}
+{% load static %}
+
+{% block content %}
+		<div class="hero">
+			<div class="header clearfix">
+				<a href="index.html" class="logo"></a>
+				<ul class="menu">
+					<li><a href="{% url 'main' %}">домой</a></li>
+					<li><a href="{% url 'products:main' %}">продукты</a></li>
+					<li><a href="{% url 'contacts:main' %}" class="active">контакты</a></li>
+				</ul>
+				<a href="#" class="search"></a>
+                <a href="#" class="basket"></a>
+			</div>
+			<h1>наши контакты</h1>
+		</div>
+		<div class="location">
+			{% for contact in contacts %}
+				<div class="location-1">
+					<i class="fa fa-map-marker fa-5x"></i>
+					<h4>{{contact.city}}</h4>
+					<div class="contacts">
+						<h5>Телефон</h5>
+						<p>{{contact.telephone}}</p>
+					</div>
+					<div class="contacts">
+						<h5>Email</h5>
+						<p>{{contact.email}}</p>
+					</div>
+					<div class="contacts">
+						<h5>Адрес</h5>
+						<p>{{contact.address}}</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+{% endblock %}

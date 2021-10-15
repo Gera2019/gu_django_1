@@ -1,11 +1,12 @@
 from django.shortcuts import render
-import json
+from mainapp.models import ProductsCategory
+
 
 # Create your views here.
+
 def products(request):
     title = 'Каталог'
-    with open ('mainapp/products_list.json', 'r') as f:
-        links_menu = json.load(f)
+    links_menu = ProductsCategory.objects.all()
 
     context = {'title': title, 'links_menu': links_menu}
     return render(request, 'mainapp/products.html', context)

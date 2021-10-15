@@ -250,7 +250,10 @@ html, body {
 	height: 270px;
 	width: 270px;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
+
 .tab-content a .text {
 	display: none;
 	height: 268px;
@@ -276,11 +279,14 @@ html, body {
 	text-align: center;
 	margin: 15px 15px;
 }
-.tab-content a .text img {
+.tab-content a .text .img-hover {
 	margin: 70px auto 0;
 }
 .tab-content a:hover .text {
 	display: block;
+}
+.tab-content .block .img-product {
+    width: 100%;
 }
 
 .promo-content-1 {
