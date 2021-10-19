@@ -10,9 +10,9 @@
 			<div class="header clearfix">
 				<a href="index.html" class="logo"></a>
 				<ul class="menu">
-					<li><a href="/">домой</a></li>
-					<li><a href="/products/" class="active">продукты</a></li>
-					<li><a href="/contact/">контакты</a></li>
+					<li><a href="{% url 'main' %}">домой</a></li>
+					<li><a href="{% url 'products:main' %}" class="active">продукты</a></li>
+					<li><a href="{% url 'contacts:main' %}">контакты</a></li>
 
 				</ul>
 				<a href="#" class="search"></a>
