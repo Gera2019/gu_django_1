@@ -251,13 +251,13 @@ html, body {
 	border-bottom: 3px solid #6c6c6c;
 }
 
-.tab-content {
+.tab-content, products-list {
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 120px;
 }
-.tab-content .block {
+.tab-content .block, products-list .block {
 	height: 270px;
 	width: 270px;
 	position: relative;
