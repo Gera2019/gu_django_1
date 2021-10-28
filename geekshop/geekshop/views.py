@@ -5,11 +5,12 @@ from contactsapp.models import Contact
 
 def main(request):
     title = 'Магазин'
-
-    basket = Basket.objects.filter(user=request.user)
+    basket = []
     products = Product.objects.all()
     contacts = Contact.objects.all()
 
+    if request.user.is_authenticated:
+        basket = Basket.objects.filter(user=request.user)
 
     context = {
         'title': title,

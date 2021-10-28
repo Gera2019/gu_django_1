@@ -50,6 +50,14 @@
 	display: block;
 }
 
+.category-products, .related-products {
+    display: flex;
+}
+
+.products-list, .related-products {
+    flex-direction: column;
+}
+
 .red {
 	text-transform: uppercase;
 	color: #e53935;

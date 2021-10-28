@@ -19,12 +19,22 @@
             {% if user.is_authenticated %}
                 <li>
                     {% if basket %}
-                        <li><a href="{% url 'basket:view' %}">Корзина</a>
-                            <span>{{ basket|length }}</span>
+                        <li><a href="{% url 'basket:view' %}" class="
+                    {% if request.resolver_match.view_name == 'basket:view' %}
+                        active
+                    {% endif %}">Корзина</a>
+                            <span>
+                                {{ basket.0.total_cost|floatformat:0 }} руб.
+                                ({{ basket.0.total_quantity  }} шт.)
+
+                            </span>
                         </li>
                     {% endif %}
                 </li>
-                <li><a href="{% url 'auth:edit' %}">{{ user.first_name|default:'Пользователь' }}</a></li>
+                <li><a href="{% url 'auth:edit' %}" class="
+                    {% if request.resolver_match.view_name == 'auth:edit' %}
+                        active
+                    {% endif %}">{{ user.first_name|default:'Пользователь' }}</a></li>
             {% endif %}
             <li>
                 {% if user.is_authenticated %}
