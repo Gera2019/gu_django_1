@@ -24,9 +24,8 @@
 				{% endfor %}
 			</ul>
 		</div>
-
 		{% if hot_product %}
-		<div class="details-products">
+			<div class="details-products">
 			<div class="details-slider">
 				<div class="slider-product">
 					<img src="/media/{{ hot_product.image }}">
@@ -62,8 +61,6 @@
 			</div>
 		</div>
 		{% endif %}
-
-
 		<div class="products-list tab-content">
 		  <div class="title clearfix">
 			  {% if category  %}
@@ -77,7 +74,7 @@
 				<a href="{% url 'products:detail' product.pk %}">
 				  <img class="img-product" src="/media/{{ product.image }}" alt="product">
 				  <div class="text">
-					<img class="img-hover" src="{% static 'img/icon-hover.png' %}" alt="hover">
+					<img class="img-hover" src="{% static 'geekshop/img/icon-hover.png' %}" alt="hover">
 					  <h4>{{ product.name }}</h4>
 					  <p>{{ product.description }}</p>
 				  </div>
@@ -87,9 +84,8 @@
 
 		  </div>
 		</div>
-
 		{% if same_products %}
-		<div class="related">
+			<div class="related">
 			<div class="title clearfix">
 				<h2>Похожие продукты</h2>
 				<a class="explore" href="#">показать все<img src="{% static 'geekshop/img/arrow.png' %}" alt=""></a>
@@ -109,6 +105,5 @@
 			</div>
 		</div>
 		{% endif %}
-
 	</div>
 {% endblock %}
