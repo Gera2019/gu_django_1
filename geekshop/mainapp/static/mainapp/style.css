@@ -52,6 +52,9 @@
 
 .category-products, .related-products {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .products-list, .related-products {

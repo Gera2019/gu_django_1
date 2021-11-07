@@ -179,4 +179,29 @@ a {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px)
     }
+    .form-control {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .product-read {
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        width: 98%;
+    }
+    .card img {
+        width: 30%;
+        position: relative;
+
+    }
+    input[type=checkbox] {
+        width: auto;
+        height: 1.5em;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    input[type=checkbox]:checked {
+        background-color: navy;
+    }
 }
